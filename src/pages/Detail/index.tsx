@@ -7,11 +7,9 @@ import {
   TouchableOpacity,
   SafeAreaView,
 } from 'react-native';
-import Constanst from 'expo-constants';
+import Constants from 'expo-constants';
 import { Feather as Icon, FontAwesome } from '@expo/vector-icons';
 import { useNavigation } from '@react-navigation/native';
-import MapView, { Marker } from 'react-native-maps';
-import { SvgUri } from 'react-native-svg';
 import { RectButton } from 'react-native-gesture-handler';
 
 const Detail = () => {
@@ -61,8 +59,8 @@ export default Detail;
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    padding: 32,
-    paddingTop: 20,
+    paddingHorizontal: 32,
+    paddingTop: 20 + Constants.statusBarHeight,
   },
 
   pointImage: {
