@@ -24,7 +24,7 @@ interface Item {
 
 interface Point {
   id: number;
-  image: string;
+  imageURL: string;
   name: string;
   lat: number;
   lng: number;
@@ -144,7 +144,7 @@ const Points = () => {
                     <Image
                       style={styles.mapMarkerImage}
                       source={{
-                        uri: point.image,
+                        uri: point.imageURL,
                       }}
                     />
                     <Text style={styles.mapMarkerTitle}>{point.name}</Text>
